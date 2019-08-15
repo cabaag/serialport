@@ -1,0 +1,36 @@
+{
+	"appId": "com.nomada.cnp",
+	"artifactName": "cnp-${version}.${ext}",
+	"directories": {
+		"buildResources": "dist",
+		"output": "release"
+	},
+	"files": [
+		"**/*",
+		"!**/*.ts",
+		"!*.code-workspace",
+		"!LICENSE.md",
+		"!package.json",
+		"!package-lock.json",
+		"!src/",
+		"!e2e/",
+		"!hooks/",
+		"!angular.json",
+		"!_config.yml",
+		"!karma.conf.js",
+		"!tsconfig.json",
+		"!tslint.json",
+		"main.js",
+		"dist"
+	],
+	"linux": {
+		"target": ["AppImage"]
+	},
+	"mac": {
+		"target": ["dmg"]
+	},
+	"productName": "CNP",
+	"win": {
+		"target": ["portable"]
+	}
+}
